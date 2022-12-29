@@ -48,5 +48,7 @@ Além das variáveis de recebimento das informações, a procedure deverá possu
 
         - Script SQL com a procedure criada e chamada para manipular os dados de universidade e e-commerce. Podem ser criados dois arquivos distintos, assim como a utilização do mesmo script para criação das procedures. Fique atento para selecionar o banco de dados antes da criação da procedure.  
         
-        [Link para Entregável](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Procedure%20and%20Index/procedure.sql)
-        Obs.: Foram criadas _Procedures_ de cadastro e controle, afim de evitar-se redundância de clientes e controle nas datas de emissão de pedido e de conclusão respectivamente.
+        
+        
+[Link para Entregável](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Procedure%20and%20Index/procedure.sql)
+Obs.: Foram criadas _Procedures_ de cadastro e controle, afim de evitar-se redundância de clientes e controle nas datas de emissão de pedido e de conclusão respectivamente.
