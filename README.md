@@ -52,3 +52,51 @@ Além das variáveis de recebimento das informações, a procedure deverá possu
         
 [Link para Entregável](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Procedure%20and%20Index/procedure.sql)
 Obs.: Foram criadas _Procedures_ de cadastro e controle, afim de evitar-se redundância de clientes e controle nas datas de emissão de pedido e de conclusão respectivamente.
+
+_________________________________________________________________________________________________________________________________________________
+
+# Projeto - Personalizando Acessos e Automatizando ações no MySQL
+
+**Parte 1 – Personalizando acessos com views** 
+
+Neste desafio você irá criar visões para os seguintes cenários 
+
+- Número de empregados por departamento e localidade 
+
+![image](https://user-images.githubusercontent.com/116984176/210107140-83f78d41-5391-4ebf-90c9-c522a789c8c9.png)
+
+- Lista de departamentos e seus gerentes 
+
+![image](https://user-images.githubusercontent.com/116984176/210107239-0da02e96-4b87-4a3f-82b4-4da7ea82fa2e.png)
+
+- Projetos com maior número de empregados (ex: por ordenação desc) 
+
+![image](https://user-images.githubusercontent.com/116984176/210107255-f7694216-1934-44ef-905c-4a8dbe7f4cfc.png)
+
+- Lista de projetos, departamentos e gerentes 
+
+![image](https://user-images.githubusercontent.com/116984176/210107269-2e25115f-c555-4fe2-be0f-9cb7add319b0.png)
+
+- Quais empregados possuem dependentes e se são gerentes 
+
+![image](https://user-images.githubusercontent.com/116984176/210107282-ca7fe11c-74ea-4ba3-b7c8-743b6d49078e.png)
+        
+       
+[Acesso às visões criadas](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Views%20and%20Triggers/view_company_ecommerce.sql)
+
+_______________________________________________________________________________________________________________________________________________________
+
+## Foram criadas restrições de acesso conforme proposto no desafio, utilizando as visões sugeridas.
+
+Os BDs usados para as views e restrições foram "Company" e "E-Commerce".
+[Link para Sintaxe de restrições](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Views%20and%20Triggers/Restri%C3%A7%C3%B5es%20de%20acesso_Company%20e%20Ecommerce.sql)
+
+_______________________________________________________________________________________________________________________________________________________
+
+**Parte 2 – Criando gatilhos para cenário de e-commerce** 
+
+Objetivo: 
+
+Sabemos que a criação de triggers está associadas a ações que podem ser tomadas em momento anterior ou posterior a inserção, ou atualização dos dados. Além disso, em casos de remoção podemos utilizar as triggers. Sendo assim, crie as seguintes triggers para o cenário de e-commerce. 
+
+[Link para Triggers criados](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Views%20and%20Triggers/Trigger.sql)
