@@ -100,3 +100,58 @@ Objetivo:
 Sabemos que a criação de triggers está associadas a ações que podem ser tomadas em momento anterior ou posterior a inserção, ou atualização dos dados. Além disso, em casos de remoção podemos utilizar as triggers. Sendo assim, crie as seguintes triggers para o cenário de e-commerce. 
 
 [Link para Triggers criados](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Views%20and%20Triggers/Trigger.sql)
+
+_______________________________________________________________________________________________________________________________________________________
+
+# Projeto - Criando Transações, Executando Backup e Recovery de Banco de Dados
+
+**Parte 1 - Essa primeira transação pode ser executada sem utilizar outros recursos como procedures. Dessa forma, você irá executar statements de consultas e modificações de dados persistidos no banco de dados via transações.**
+
+[Link para Parte 01](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/transaction_pt01.sql)
+
+**PARTE 2 - TRANSAÇÃO COM PROCEDURE**
+
+Você deverá criar outra transação, contudo, esta será definida dentro de uma procedure. Neste caso, assim como no exemplo em aula, deverá haver uma verificação de erro. Essa verificação irá acarretar um ROLLBACK, total ou parcial (SAVEPOINT). 
+
+[Link para Parte 02](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/transaction_pt02.sql)
+
+**PARTE 3 – BACKUP E RECOVERY**
+
+Objetivo: 
+
+Neste etapa do desafio, você irá executar o backup do banco de dados e-commerce. Realize o backup e recovery do banco de dados; 
+
+        - Utilize o mysqdump para realizar o backup e recovery do banco de dados e-commerce; 
+
+        - Realize o backup de diferentes bancos de dados e inseria os recursos como: procedures, eventos e outros. 
+
+        - Adicione o arquivo de backup ao github juntamente com o script; 
+
+
+
+
+## Backup de todos os databases: 
+[Link para Download](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/all_databases_backup.sql)
+
+
+## Backup dos bancos de dados selecionados:
+[Link para visualização](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/all_selected_databases_backup.sql)
+
+
+## Backup ecommerce DB:
+[Link para Visualização](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/ecommerce_backup.sql)
+
+
+## Backup ecommerce DB sem data:
+[Link para Visualização](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/ecommerce_nodata_backup.sql)
+
+
+## Backup ecommerce DB sem infra:
+[Link para Visualização](https://github.com/IsraelEvangelista/SQL_Database_Specialist/blob/main/Transa%C3%A7%C3%B5es/ecommerce_noinfo_backup.sql)
+    
+    
+## Recovery ecommerce DB:
+Utilizando "Backup ecommerce DB" para Recovery
+    
+*_Sintaxe_* 
+mysql --user root --password ecommerce < ecommerce_backup.sql
